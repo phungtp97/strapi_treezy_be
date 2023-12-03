@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feeds",
+  "info": {
+    "singularName": "feed",
+    "pluralName": "feeds",
+    "displayName": "feed",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rankings",
+  "info": {
+    "singularName": "ranking",
+    "pluralName": "rankings",
+    "displayName": "ranking"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "ranking"
+    }
+  }
+}
